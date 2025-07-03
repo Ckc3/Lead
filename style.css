@@ -29,6 +29,21 @@ header {
     margin-bottom: 80px;
 }
 
+.title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.title-logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.3));
+}
+
 .site-title {
     font-size: 5rem;
     font-weight: 700;
@@ -135,6 +150,15 @@ header {
 }
 
 @media (max-width: 768px) {
+    .title-container {
+        gap: 15px;
+    }
+    
+    .title-logo {
+        width: 50px;
+        height: 50px;
+    }
+    
     .site-title {
         font-size: 3.5rem;
         letter-spacing: -1px;
@@ -158,6 +182,15 @@ header {
 }
 
 @media (max-width: 480px) {
+    .title-container {
+        gap: 10px;
+    }
+    
+    .title-logo {
+        width: 40px;
+        height: 40px;
+    }
+    
     .site-title {
         font-size: 2.5rem;
     }
