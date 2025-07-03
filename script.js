@@ -1,10 +1,10 @@
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Get the audio element
+
     const audio = document.getElementById('backgroundMusic');
     let hasPlayed = false;
     
-    // Add click anywhere to play sound
+
     document.addEventListener('click', function() {
         if (!hasPlayed) {
             audio.play().catch(function(error) {
@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
-    // Add a subtle animation to the title
+
     const title = document.querySelector('.site-title');
     title.style.opacity = '0';
     title.style.transform = 'translateY(-20px)';
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
         title.style.transform = 'translateY(0)';
     }, 300);
     
-    // Add stagger animation to owner cards
+
     const ownerCards = document.querySelectorAll('.owner-card');
     ownerCards.forEach((card, index) => {
         card.style.opacity = '0';
@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 600 + (index * 200));
     });
     
-    // Add click effect to profile images
+
     const profileImages = document.querySelectorAll('.profile-image img');
     profileImages.forEach(img => {
         img.addEventListener('click', function() {
